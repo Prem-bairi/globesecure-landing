@@ -32,7 +32,7 @@ const HeroSection = () => {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Smart Tourist System
+                Journey Pal
               </h1>
               <p className="text-xl text-muted-foreground max-w-xl">
                 AI-powered safety, real-time monitoring, and secure digital ID for modern tourism. 

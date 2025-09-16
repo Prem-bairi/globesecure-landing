@@ -18,16 +18,16 @@ const CTASection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full text-sm font-medium">
             <Zap size={16} />
-            Transform Tourist Safety Today
+            Transform Your Travel Experience
           </div>
 
           {/* Main Headline */}
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Ready to Redefine
+              Ready to Experience
               <br />
               <span className="gradient-primary bg-clip-text text-transparent">
-                Tourist Safety?
+                Journey Pal?
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">

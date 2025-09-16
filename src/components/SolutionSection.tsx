@@ -55,7 +55,7 @@ const SolutionSection = () => {
             Revolutionary Safety Technology
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Combining artificial intelligence, blockchain technology, and real-time monitoring to create the most advanced tourist safety system ever built.
+            Combining artificial intelligence, blockchain technology, and real-time monitoring to create the most advanced travel companion system ever built.
           </p>
         </div>
 

@@ -104,8 +104,8 @@ const Navigation = () => {
               <Shield className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-lg font-bold text-foreground">SafeTour</h1>
-              <p className="text-xs text-muted-foreground">Smart Safety System</p>
+              <h1 className="text-lg font-bold text-foreground">Journey Pal</h1>
+              <p className="text-xs text-muted-foreground">Your Travel Companion</p>
             </div>
           </div>
 

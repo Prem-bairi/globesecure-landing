@@ -95,7 +95,7 @@ const Navigation = () => {
   );
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
+    <nav className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-xl border-b border-slate-700/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -104,8 +104,8 @@ const Navigation = () => {
               <Shield className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-lg font-bold text-foreground">Journey Pal</h1>
-              <p className="text-xs text-muted-foreground">Your Travel Companion</p>
+              <h1 className="text-lg font-bold text-white">Journey Pal</h1>
+              <p className="text-xs text-slate-300">Your Travel Companion</p>
             </div>
           </div>
 
@@ -115,7 +115,7 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
+                className="text-sm font-medium text-slate-300 hover:text-white transition-all duration-200"
               >
                 {item.name}
               </a>
@@ -130,7 +130,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-secondary transition-smooth"
+            className="md:hidden p-2 rounded-lg hover:bg-slate-800 transition-all duration-200 text-white"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -138,12 +138,12 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-4 border-t border-border/50 bg-background/95 backdrop-blur-xl">
+          <div className="md:hidden py-4 space-y-4 border-t border-slate-700/50 bg-slate-900/95 backdrop-blur-xl">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="block px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
+                className="block px-4 py-2 text-sm font-medium text-slate-300 hover:text-white transition-all duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}

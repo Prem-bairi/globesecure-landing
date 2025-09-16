@@ -32,13 +32,7 @@ const HeroSection = () => {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Smart Tourist
-                <br />
-                <span className="gradient-primary bg-clip-text text-transparent">
-                  Safety Monitoring
-                </span>
-                <br />
-                System
+                Smart Tourist System
               </h1>
               <p className="text-xl text-muted-foreground max-w-xl">
                 AI-powered safety, real-time monitoring, and secure digital ID for modern tourism. 

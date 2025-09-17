@@ -26,9 +26,7 @@ const CTASection = () => {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Ready to Experience
               <br />
-              <span className="gradient-primary bg-clip-text text-transparent">
-                Journey Pal?
-              </span>
+              Journey Pal?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Join the revolution in travel safety technology. Protect tourists with AI-powered monitoring, 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Shield, Menu, X, UserCheck, Badge } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,11 +16,19 @@ const Navigation = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const LoginButton = () => (
+    <Link to="/login">
+      <Button variant="hero" size="lg" className="font-semibold">
+        Login / Signup
+      </Button>
+    </Link>
+  );
+
   const LoginModal = () => (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="hero" size="lg" className="font-semibold">
-          Login / Signup
+        <Button variant="outline" size="sm" className="font-semibold">
+          Quick Login
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
@@ -123,8 +132,9 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Login Button */}
-          <div className="hidden md:flex">
+          <div className="hidden md:flex items-center gap-3">
             <LoginModal />
+            <LoginButton />
           </div>
 
           {/* Mobile Menu Button */}
@@ -149,8 +159,9 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <div className="px-4 pt-2">
+            <div className="px-4 pt-2 space-y-2">
               <LoginModal />
+              <LoginButton />
             </div>
           </div>
         )}

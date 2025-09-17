@@ -45,11 +45,22 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
+    /* Modern Orange & Black Theme */
+    --orange: 25 95% 53%; /* Modern Orange */
+    --orange-foreground: 0 0% 100%;
+    --orange-light: 25 95% 63%;
+    --orange-dark: 25 95% 43%;
+
+    --dark: 220 15% 8%; /* Modern Dark */
+    --dark-foreground: 0 0% 100%;
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%), hsl(210 100% 60%));
     --gradient-safety: linear-gradient(135deg, hsl(145 100% 45%), hsl(145 100% 55%));
     --gradient-hero: linear-gradient(135deg, hsl(220 25% 97%) 0%, hsl(210 95% 95%) 50%, hsl(145 90% 95%) 100%);
     --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+    --gradient-modern: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(220 15% 8%) 100%);
+    --gradient-modern-bg: linear-gradient(135deg, hsl(25 95% 95%) 0%, hsl(220 15% 95%) 50%, hsl(25 95% 98%) 100%);
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -2px hsl(220 15% 15% / 0.08);
@@ -126,6 +137,7 @@
 
   body {
     @apply bg-background text-foreground font-inter antialiased;
+    background: linear-gradient(135deg, hsl(25 95% 95%) 0%, hsl(220 15% 95%) 50%, hsl(25 95% 98%) 100%);
   }
 }
 
@@ -145,6 +157,14 @@
   
   .gradient-card {
     background: var(--gradient-card);
+  }
+  
+  .gradient-modern {
+    background: var(--gradient-modern);
+  }
+  
+  .bg-gradient-modern {
+    background: var(--gradient-modern-bg);
   }
 
   /* Shadow Utilities */
@@ -178,6 +198,12 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .glass-modern {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   /* Hover Effects */

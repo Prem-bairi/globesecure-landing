@@ -55,12 +55,12 @@
     --dark-foreground: 0 0% 100%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%), hsl(210 100% 60%));
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 95% 63%));
     --gradient-safety: linear-gradient(135deg, hsl(145 100% 45%), hsl(145 100% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 25% 97%) 0%, hsl(210 95% 95%) 50%, hsl(145 90% 95%) 100%);
-    --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+    --gradient-hero: linear-gradient(135deg, hsl(220 15% 8%) 0%, hsl(25 95% 12%) 30%, hsl(220 15% 6%) 60%, hsl(25 95% 15%) 100%);
+    --gradient-card: linear-gradient(145deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
     --gradient-modern: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(220 15% 8%) 100%);
-    --gradient-modern-bg: linear-gradient(135deg, hsl(25 95% 95%) 0%, hsl(220 15% 95%) 50%, hsl(25 95% 98%) 100%);
+    --gradient-modern-bg: linear-gradient(135deg, hsl(220 15% 8%) 0%, hsl(25 95% 12%) 50%, hsl(220 15% 6%) 100%);
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -2px hsl(220 15% 15% / 0.08);
@@ -137,7 +137,7 @@
 
   body {
     @apply bg-background text-foreground font-inter antialiased;
-    background: linear-gradient(135deg, hsl(25 95% 95%) 0%, hsl(220 15% 95%) 50%, hsl(25 95% 98%) 100%);
+    background: linear-gradient(135deg, hsl(220 15% 8%) 0%, hsl(25 95% 15%) 20%, hsl(220 15% 12%) 40%, hsl(25 95% 8%) 60%, hsl(220 15% 6%) 80%, hsl(25 95% 12%) 100%);
   }
 }
 
@@ -195,15 +195,15 @@
 
   /* Glass Effect */
   .glass {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 133, 27, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 133, 27, 0.2);
   }
   
   .glass-modern {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 133, 27, 0.15);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 133, 27, 0.3);
   }
 
   /* Hover Effects */
